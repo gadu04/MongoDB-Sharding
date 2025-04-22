@@ -1,0 +1,13 @@
+systemLog:
+  destination: file
+  path: /mongo-shard-test/data/logs/shard1-3.log
+storage:
+  dbPath: /mongo-shard-test/data/shard1-3
+net:
+  bindIp: 127.0.0.1
+  port: 27022
+sharding:
+  clusterRole: shardsvr
+replication:
+  replSetName: shard1ReplSet
+
